@@ -1,4 +1,3 @@
-const num = 15;
 function factorialCalculator(x) {
   let result = 1;
   for (let i = x; i > 0; i--) {
