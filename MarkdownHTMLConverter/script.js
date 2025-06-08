@@ -18,7 +18,6 @@ function convertMarkdown() {
   let html = markdownInput.value;
   // Apply all inline markdown patterns first (except blockquote)
   patternReplacementArray.forEach((item) => {
-    if (Object.keys(item)[0] === "quote") return;
     const [pattern, replacement] = Object.values(item)[0];
     html = html.replace(pattern, replacement);
   });
@@ -36,6 +35,7 @@ function convertMarkdown() {
 markdownInput.addEventListener("input", function () {
   const htmlOutput = document.getElementById("html-output");
   const html = convertMarkdown();
+  console.log("Converted HTML:", html); // Debug log
   htmlOutput.textContent = html;
   preview.innerHTML = html;
 });
