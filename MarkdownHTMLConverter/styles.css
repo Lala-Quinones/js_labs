@@ -20,6 +20,7 @@
      margin: auto;
      white-space: pre-wrap;
      background-color: #f9f9f9;
+     color: #030318;
 }
  @media (min-width: 600px) {
      #markdown-input, #html-output, #preview {
