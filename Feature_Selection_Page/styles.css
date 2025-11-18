@@ -1,0 +1,72 @@
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: white;
+}
+
+.subtitle {
+  margin-top: -10px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.feature-card-container {
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+.feature-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #333;
+  max-width: 400px;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  margin: 12px auto;
+  text-align: left;
+  font-weight: 500;
+}
+
+.feature-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 40px;
+}
+
+label {
+  display: block;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  appearance: none;
+  border: 2px solid #667eea;
+  border-radius: 4px;
+  background-color: white;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #667eea;
+  
+}
+
+input[type="checkbox"]:checked::after {
+  content: "✓";
+  display: block;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  line-height: 22px;
+}
